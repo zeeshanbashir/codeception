@@ -1,0 +1,10 @@
+actor: ApiTest
+class_name: ApiTest
+modules:
+    enabled:
+        - Rest:
+              url: https://jsonplaceholder.typicode.com
+              depends: PhpBrowser
+              part: Json
+              xdebug_remote: true
+        - Asserts
